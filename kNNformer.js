@@ -36,7 +36,7 @@ function preprocessQuery(query) {
 
 (async () => {
   const products = generateMockProducts(NUM_PRODUCTS);
-  const embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+  const embedder = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L12-v2');
 
   console.log("Batch embedding products...");
   const batchSize = 128;
